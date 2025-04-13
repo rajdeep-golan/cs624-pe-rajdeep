@@ -7,7 +7,7 @@ This is a basic React Native app called **HelloWorld** that simply shows my pers
 
 ## Input
 
-Everything is hardcoded into the app — my name (**Sumit K C**), my degree (**MSCS**), and my school (**STC**), just like the prompt required.
+Everything is hardcoded into the app — my name (**Rajdeep Singh Golan**), my degree (**MSCS**), and my school (**STC**), just like the prompt required.
 
 ## Process
 
