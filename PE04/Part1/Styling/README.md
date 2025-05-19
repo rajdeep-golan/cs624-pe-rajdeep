@@ -1,4 +1,4 @@
-## Module 1: Profile Display using Default Image and Hardcoded Personal Info 👤
+## Part 1: Profile Display using Default Image and Hardcoded Personal Info 👤
 
 ### Input
 The program takes static input in the form of hardcoded user data (e.g., name, email, and role) and a profile image file (`user.png`) used as the default avatar.
