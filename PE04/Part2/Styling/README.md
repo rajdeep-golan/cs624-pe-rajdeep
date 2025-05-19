@@ -1,4 +1,4 @@
-## Module 2: Gallery of Profile Cards with Flexbox Layout and Expand/Collapse Behavior 🧩
+## Part 2: Gallery of Profile Cards with Flexbox Layout and Expand/Collapse Behavior 🧩
 
 ### Input
 The component uses static input by defining an array of hardcoded profile data, each including `name`, `email`, `role`, and an image (`user.png`). 
