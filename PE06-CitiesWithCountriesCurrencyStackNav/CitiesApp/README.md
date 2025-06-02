@@ -1,50 +1,8 @@
-# Welcome to your Expo app 👋
+# Input  
+The mobile app has four main tabs: CitiesNav, AddCity, CountriesNav, and AddCountry. In the **AddCity** tab, users can type in a city name along with its country to add a new city. The **AddCountry** tab allows users to add a country and its main currency. In **CountriesNav**, users can tap a country and add multiple currencies to it, each with a short description. The **CitiesNav** tab lets users select a city and attach various locations to it. All data is entered through form fields (TextInputs) and submitted via buttons like “Add City” or “Add Currency.”
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# Process  
+The app uses React Native and is structured with bottom tab navigation and nested stack navigators for screens that require deeper navigation. It manages data using local component state (`this.state`) inside the main App component. Functions such as `addCity`, `addCountry`, and `addCurrency` are defined in the App and passed down to child components through props. These functions update local arrays that store cities and countries. Navigation between lists and detail views (e.g., from country list to its currency detail) is handled using stack navigators.
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Output  
+All user-submitted entries appear instantly in scrollable lists. If there’s no data yet, the app displays friendly messages like “No saved cities!” or “No currencies added!” The UI updates live as data is added, without needing to refresh, providing a smooth and user-friendly experience.
